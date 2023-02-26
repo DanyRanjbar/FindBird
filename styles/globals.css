@@ -13,6 +13,7 @@ html,body,#root {
 @font-face {
   font-family: "Garute";
   src: url("../public/fonts/Garute-Regular.ttf");
+  font-display: block;
 }
 
 a {

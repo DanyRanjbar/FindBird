@@ -11,6 +11,7 @@ const Header = () => {
             height={100}
             alt={"findbird logo"}
             src={"/find bird2.png"}
+            className=" ml-12"
           />
         </div>
 

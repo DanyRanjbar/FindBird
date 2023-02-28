@@ -1,0 +1,8 @@
+.text-bold{
+    font-family: "ExtraBold";
+}
+@font-face {
+    font-family: "ExtraBold";
+    src: url("../public/fonts/Garute-ExtraBold.ttf");
+    font-display: block;
+}

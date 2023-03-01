@@ -1,20 +1,24 @@
 import "../styles/text-bold.modules.css";
 import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
-import Header from "@/components/Header/page";
 import GlassCart from "@/components/glassCart/page";
-
+import Header from "@/components/Header/page";
 
 const HomePage = () => {
   return (
     <div>
-      <Image className=" absolute top-0 right-0" width={630} height={500} src={"/pngwing.com 2.png"}/>
-      <Header className=" absolute top-0"/>
-      <div className=" flex flex-col ml-40 mt-40 relative">
+      <Image
+        className=" image-anim absolute top-0 right-0"
+        width={630}
+        height={500}
+        src={"/pngwing.com 2.png"}
+      />
+      <Header className=" absolute top-0" />
+      <div className=" flex flex-col mt-40 relative animation-h1">
         <h1 className=" my-4 text-6xl text-bold">Helping you</h1>
         <h1 className=" my-4 text-6xl">to get information</h1>
         <h1 className=" my-4 text-6xl">about your bird</h1>
-        <div className=" flex items-center gap-7">
+        <div className="opacity-anim flex items-center gap-7">
           <input
             className=" w-80 h-11 px-4 text-sm outline-none rounded-full border border-zinc-400 my-7"
             placeholder="find your bird"

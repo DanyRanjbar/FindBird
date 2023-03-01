@@ -1,18 +1,11 @@
-import Image from "next/image";
 import NavButton from "../navButton/page";
-
+import "../../styles/text-bold.modules.css"
 const Header = () => {
   return (
     <header className=" py-5 px-28 bg-transparent relative">
       <div className=" flex justify-between items-center">
         <div className=" flex items-start">
-          <Image
-            width={150}
-            height={100}
-            alt={"findbird logo"}
-            src={"/find bird2.png"}
-            className=" ml-12"
-          />
+          <h1 className="text-bold text-2xl ml-10 logo-anim">FindBird</h1>
         </div>
 
         <div className=" flex items-center">

@@ -1,5 +1,5 @@
 import NavButton from "../navButton/page";
-import "../../styles/text-bold.modules.css"
+import "../../styles/Home-css.modules.css"
 const Header = () => {
   return (
     <header className=" py-5 px-28 bg-transparent relative">

@@ -1,8 +1,9 @@
-import "../styles/text-bold.modules.css";
+import "../styles/Home-css.modules.css";
 import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
 import GlassCart from "@/components/glassCart/page";
 import Header from "@/components/Header/page";
+
 
 const HomePage = () => {
   return (
@@ -33,10 +34,11 @@ const HomePage = () => {
             <CiSearch />
           </button>
         </div>
-      </div>
-
-      <div>
-        <GlassCart />
+        <div className=" flex gap-6 mt-10">
+          <GlassCart image="https://s2.uupload.ir/files/1_j3tw.png"/>
+          <GlassCart image="https://s2.uupload.ir/files/3_5ak5.png" />
+          <GlassCart image="https://s2.uupload.ir/files/wallpaperflare.com_wallpaper_2b33.png"/>
+        </div>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ export const fakedata = [
           "Thailand",
           "Vietnam"
         ],
-        "resident": " subtropical or tropical moist lowland forest and subtropical or tropical moist montane forest",
+        "resident": "subtropical or tropical moist lowland forest and subtropical or tropical moist montane forest",
         "measures": "16–17 cm (6.3–6.7 in)",
         "weighs": "25–35 g (0.9–1.2 oz)",
         "family": [

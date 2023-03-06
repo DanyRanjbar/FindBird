@@ -27,7 +27,7 @@ const HomePage = () => {
 
           <button
             className=" w-11 h-11 rounded-full
-           border-none bg-red-500 flex
+           border-none bg-red-500 flex hover:bg-red-400 transition-all
            justify-center items-center text-white outline-none text-2xl"
           >
             <CiSearch />

@@ -34,7 +34,19 @@ const HomePage = () => {
           </button>
         </div>
         <div className=" flex gap-6 mt-10">
-          <GlassCart/>
+          <GlassCart />
+        </div>
+      </div>
+
+      <div className=" flex justify-around my-40 pt-14 px-10">
+        <div className=" mt-10 mx-2">
+          <Image width={250} height={500} src={"/3_5ak5.png"} />
+        </div>
+        <div>
+          <span className=" text-bold text-5xl ">How it </span><span className="  text-5xl">works</span>
+          <p className=" mt-5">
+            This is step to get your bird information
+          </p>
         </div>
       </div>
     </div>

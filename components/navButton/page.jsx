@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 const NavButton = () => {
   return (
     <div className=" flex justify-between items-center gap-1">
@@ -21,7 +20,7 @@ const NavButton = () => {
             How it work
         </button>
       </Link>
-      <Link href={"/"}>
+      <Link href={"/bird"}>
         <button
           className=" w-[110px] h-6 
             text-base bg-transparent flex

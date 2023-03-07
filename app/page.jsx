@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
 import GlassCart from "@/components/glassCart/page";
 import Header from "@/components/Header/page";
+import Step from "@/components/step/page";
 
 const HomePage = () => {
   return (
@@ -39,14 +40,21 @@ const HomePage = () => {
       </div>
 
       <div className=" flex justify-around my-40 pt-14 px-10">
-        <div className=" mt-10 mx-2">
+        <div className=" my-14 mx-2">
           <Image width={250} height={500} src={"/3_5ak5.png"} />
         </div>
-        <div>
-          <span className=" text-bold text-5xl ">How it </span><span className="  text-5xl">works</span>
-          <p className=" mt-5">
+        <div className=" flex flex-col w-[500px]">
+          <div className="text-5xl flex gap-2 items-center">
+            <p className=" text-bold">How it</p><p>works</p> 
+          </div>
+          <p className=" my-5">
             This is step to get your bird information
           </p>
+
+          <div>
+            <Step/>
+          </div>
+
         </div>
       </div>
     </div>

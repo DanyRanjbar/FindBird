@@ -11,7 +11,7 @@ const HomePage = () => {
       <Image
         className=" image-anim absolute top-0 right-0"
         width={630}
-        height={500}
+        height={800}
         src={"/pngwing.com 2.png"}
       />
       <Header className=" absolute top-0" />

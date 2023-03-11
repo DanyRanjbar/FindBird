@@ -1,31 +1,31 @@
-const nodemailer = require('nodemailer');
+import { connectToDatabase } from './db'
+import multer from 'multer'
 
-const transporter = nodemailer.createTransport({
-  service: 'Gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD
+const upload = multer()
+
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Method not allowed' })
   }
-});
 
-const sendEmail = (formData) => {
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: process.env.ADMIN_EMAIL,
-    subject: 'New submission for approval',
-    html: `
-      <p>Photo: ${formData.photo}</p>
-      <p>Title: ${formData.title}</p>
-      <p>Description: ${formData.description}</p>
-    `
-  };
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
-};
+  const { photo, title, species, native, description } = req.body
 
-module.exports = sendEmail;
+  const db = await connectToDatabase()
+
+  const collection = db.collection('submissions')
+
+  const result = await collection.insertOne({
+    photo,
+    title,
+    species,
+    native,
+    description,
+    status: 'pending',
+  })
+
+  if (result.acknowledged) {
+    res.status(201).json({ message: 'Submission received' })
+  } else {
+    res.status(500).json({ message: 'Error processing submission' })
+  }
+}

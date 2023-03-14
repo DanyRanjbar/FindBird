@@ -39,7 +39,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className=" flex justify-around my-40 pt-14 px-10">
+      <div className=" flex justify-around my-40 pt-14 pb-10 px-10">
         <div className=" my-14 mx-2">
           <Image width={250} height={500} src={"/3_5ak5.png"} />
         </div>
